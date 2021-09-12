@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Cadastro de Conselho</title>
+</head>
+
+<body bgcolor="#E5EBEA">
+
+    <table border align=center width="100%" bgcolor="#DBD9DB">
+        <td>
+            <h2><center>Cadastro de Conselho</center></h2>
+        </td>
+    </table>
+    <b>Programa</b>
+    <br>
+    <table>
+        <form action="input">
+            <br>
+            <td>Unidade</td>
+            <th><input type="text" name="fUnidade1" size="5"></th>
+            <th><input type="text" name="fUnidade2" size="100"></th>
+            <tr></tr>
+            <td>Programa</td>
+            <th><input type="text" name="fPrograma1" size="5"></th>
+            <th><input type="text" name="fPrograma2" size="100"></th>
+        </form>
+    </table>
+
+    <br>
+    <b>Conselho de Programa de Pós-Graduação</b>
+    <table>
+        <form action="input">
+            <td>Código</td>
+            <th align="left"><input type="text" name="fCodigo" size="5"></th>
+            <tr></tr>
+            <td>Nome</td>
+            <th align="left"><input type="text" name="fNome" size="5"></th>
+            <tr></tr>
+            <td>Tipo</td>
+            <th align="left">
+                <select name="sTipo">
+                    <option value=""></option>
+                    <option value="opcao1">Opção 1</option>
+                    <option value="opcao2">Opção 2</option>
+                    <option value="opcao3">Opção 3</option>
+                </select>
+            </th>
+            <tr></tr>
+            <td>Fundamento</td>
+            <th>
+                <textarea name="tFundamento" id="" cols="60" rows="2"></textarea>
+            </th>
+        </form>
+    </table>
+    <br>
+    <center>
+        <input type="submit" value="Salvar">
+        <button type="reset">Reset</button>
+    </center>
+</body>
+
+</html>

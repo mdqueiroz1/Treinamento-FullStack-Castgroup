@@ -1,0 +1,111 @@
+:root{
+	--background : #daf0ee;
+	--cor1: #9DB5B2;
+	--cor2: #ffff;
+	--corSombra: #ffff;
+	--corFonte:#3B413C;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	background: var(--background);	
+	background-size: 100%;
+	background-position: bottom;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+}
+
+#emailLogin, #senhaLogin, #botaoLogin, #botaoRegistro, #logo{
+	box-shadow: 3px 3px 3px var(--corFonte);
+}
+
+.logoSup{
+	width: 180px;
+	background-color: var(--cor1);
+}
+
+
+#tituloLogin{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: var(--corFonte);
+}
+
+.caixaLogin{
+	width: 300px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background:var(--cor1);
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px var(--corFonte);
+}
+
+.caixaLogin h2{
+	color: #1E2019;
+	font-weight: 500;
+	background: none;
+}
+
+.caixaLogin #emailLogin, .caixaLogin #senhaLogin{
+	border: 0; 
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align:center;
+	border: 2px solid #251605;
+	padding: 10px 10px;
+	width:200px;
+	outline: none;
+	color: #251605;
+	border-radius: 11px;
+	transition: 0.25s;
+		
+}
+
+.caixaLogin #emailLogin:focus, .caixaLogin #senhaLogin:focus{
+	width:210px;
+	border-color: var(--background);
+}
+
+.caixaLogin #botaoLogin, #botaoRegistro{
+	border: 0; 
+	background: #94D1BE;
+	display: block;
+	margin: 20px auto;
+	text-align:center;
+	padding: 10px 10px;
+	width:100px;
+	color: #251605;
+	border-radius: 11px;
+	transition: 0.25s;
+	border-color: #68BD97;
+}
+
+.caixaLogin #botaoLogin:hover, #botaoRegistro:hover{
+	background: #FEC0AA;
+}
+
+#logo{
+	background: var(--background);
+	padding: 3px;
+	border-radius: 10px;
+}
+
+#linkLogo{
+	background: none;
+}
+
+
+.logoFB{
+	width: 12%;
+	height: auto;	
+}
+
+.logoGoogle{
+	width: 13%;
+	height: auto;
+}

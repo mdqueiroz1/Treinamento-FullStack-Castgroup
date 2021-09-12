@@ -1,0 +1,86 @@
+:root{
+	--background : #daf0ee;
+	--cor1: #9DB5B2;
+	--cor2: #ffff;
+	--corSombra: #136E51;
+	--corFonte:#3B413C;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Kaisei Tokumin', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
+}
+
+body{
+    background-color: var(--background);
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    align-tracks: right;
+    background-color: var(--cor1);
+}
+
+.logoSupermercado{
+    width: 150px;
+    
+    float: left;
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    background-color: var(--corSombra);
+    margin-top: 25px;
+    text-align: left;
+}
+
+.menu ul li{
+    display: inline;
+    position: relative;
+}
+
+.menu ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    transition: background .250s;
+
+}
+
+.menu ul li a:hover{
+    background-color: var(--background);
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.menu ul li:hover ul{
+    display: flex;   
+}
+
+.menu ul ul li{
+    display: flex;
+}
+
+.menu ul ul li a{
+    display: block;
+    background-color: var(--cor1);
+    text-align: center;
+}
+
+.botaoLogin{
+    align-self: right;
+}

@@ -1,0 +1,74 @@
+:root{
+    --corl: #59A96A;
+    --cor2: #9BDEAC;
+    --cor3: #636940;
+    --cor4: #B4E7CE;
+    --corSombra: #474A2C;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Kaisei Tokumin', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
+}
+
+body{
+    background-color: var(--cor4);
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    background-color: var(--cor2);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.menu ul li{
+    display: inline;
+    position: relative;
+}
+
+.menu ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    transition: background .250s;
+}
+
+.menu ul li a:hover{
+    background-color: var(--corSombra);
+    color: var(--cor4);
+    text-decoration: none;
+    padding: 20px;
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.menu ul li:hover ul{
+    display: block;
+}
+
+.menu ul ul li{
+    display: block;
+}
+
+.menu ul ul li a{
+    display: block;
+    background-color: var(--cor2);
+    text-align: left;
+}
