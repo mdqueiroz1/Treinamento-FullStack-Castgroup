@@ -19,30 +19,31 @@
 body{
     background-color: var(--background);
     font-family: 'Kaisei Tokumin', serif;
+    font-size: 15px;
+    font-weight: 300;
 }
 
-/*
-# Barra pesquisa, menu carrinho e login
+/*  
+    !Barra pesquisa, menu carrinho e login
 */
 
 .cabecalhoPagina{
     background-color: var(--cor1);
     padding-bottom: 1%;
-
 }
 
 .pesquisaInput{
     width: 40%;
     height: 5%;
-    margin: 10px;
-    padding-left: 5px;
-    font-size: 18px;
-    background-color: var(--background);
+    border: none;
+    margin: .625rem;
+    padding-left: .625rem;
+    font-size: 1.125rem;
     margin-left: 15%;
-    border-radius: 5px;
+    border-radius: .3125rem;
 }
 .fi-rr-search{
-text-decoration: none;
+    text-decoration: none;
     font-size: 20px;
     color: var(--corFonte);
 }
@@ -82,6 +83,7 @@ text-decoration: none;
     margin: 0;
     margin-top: 15px;
     text-align: left;
+    text-shadow: 2px 2px 2px var(--corSombra);
 }
 
 .menu ul li{
@@ -94,28 +96,30 @@ text-decoration: none;
     text-decoration: none;
     padding: 15px;
     transition: background .500s;
-
 }
 
 .menu ul li a:hover{
-    background-color: var(--corSombra);
     color: var(--background);
     text-decoration: none;
 }
 
 .menu ul ul{
     display: none;
-    position: absolute;
     left: 0;
+    position: absolute;
 }
 
 .menu ul li:hover ul{
-    display: flex;
+    display: block;
     margin: 0px;
+
 }
 
 .menu ul ul li{
+    background-color: #F22E2E;
+    padding-right: 20px;
     display: flex;
+    box-shadow: .1875rem .1875rem .1875rem var(--corFonte);
 }
 
 .menu ul ul li a{
@@ -123,3 +127,47 @@ text-decoration: none;
     background-color: var(--cor1);
     text-align: center;
 }
+
+/* !Fim  barra de pesquisa, cabeçalho, icones */
+
+/* !Fale conosco */
+
+.faleConosco{
+    width: 37.5rem;
+    background-color: #F22E2E;
+    margin: 3.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 1.25rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    box-shadow: .1875rem .1875rem .1875rem var(--corFonte);
+    border-radius: .3125rem;
+}
+
+.faleConosco h2{
+    margin-bottom: .8125rem;
+    text-align: center;
+    color:black;
+    text-shadow:2px 2px 2px var(--corSombra);
+}
+
+#caixaTexto{
+    margin: .625rem;
+    border: none;
+    border-radius: .3125rem;
+    height: 1.875rem;
+    padding-left: .4375rem;
+    box-shadow: 3px 3px 3px var(--corSombra);
+}
+
+.inputEmail{
+    width: 18.75rem;
+}
+
+.inputNome{
+    width: 15.625rem;
+}
+
+/* !Fim Fale conosco */
