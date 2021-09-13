@@ -10,7 +10,8 @@
     <body>
         
         <div class="cabecalhoPagina">
-            <!--Barra de pesquisa-->
+            
+            <!--!Barra de pesquisa-->
             <a href="index.html"><img src="/CSS/imagens/supermercadologo.png" class="logoSupermercado"></a>
             <div class="barraPesquisa">
                 <input type="text" class="pesquisaInput" placeholder="Pesquisa" >
@@ -18,22 +19,34 @@
                 <a href="login.html" id="iconeBarraPesquisa"><i class="fi-rr-user"></i></a>
                 <a href="#" id="iconeBarraPesquisa"><i class="fi-rr-shopping-cart"></i></a>
             </div>
-    
+            
+            <!--!Menu Dropdown-->
             <div class="menuDropdown">
                 <header class="header">
                     <nav class="menu">
                         <ul>
                             <li><a href="#"><i class="fi-rr-menu-burger"></i> Todos os departamentos</i></a>
                                 <ul>
-                                    <li><a href="#">Alimentos</a>
-                                    <li><a href="#">Higiene</a>
-                                    <li><a href="#">Limpeza</a>
+                                    <li><a href="#"><img src="/CSS/imagens/001-meat.png"> Alimentos</a>
+                                    <li><a href="#"><img src="/CSS/imagens/002-bathtub.png"> Higiene</a>
+                                    <li><a href="#"><img src="CSS/imagens/003-basket.png" > Limpeza</a>
+                                    <li><a href="#"><img src="/CSS/imagens/001-softdrinks.png"> Bebidas</a>
                                 </ul>
-                            <li><a href="#"><i class="fi-rr-shop"></i> Ofertas do dia</i></a>        
+                            <li><a href="#"><i class="fi-rr-shop"></i> Ofertas do dia</i></a>
+                            <li><a href="#"><i class="fi-rr-megaphone"></i> Contato</i></a>        
                         </ul>
                     </nav>
                 </header>
             </div>
+        
+        </div>
+        
+        <!--!caixa de dialogo Fale Conosco-->
+        <div class="faleConosco">
+            <p><h2><i class="fi-rr-bell-ring"></i> Cadastre seu email para receber todas as promoções!</h2></p>
+            <input type="email" class="inputEmail" id="caixaTexto" placeholder="Email">
+            <input type="text" class="inputNome" id="caixaTexto" placeholder="Nome Completo">
+            <input type="button" value="Enviar" id="botaoEnviar">
         </div>
 
 

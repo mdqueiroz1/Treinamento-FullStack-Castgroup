@@ -1,5 +1,5 @@
 :root{
-	--background : #D9BBA0;
+	--background : #E9E9E9;
 	--cor1: #F22E2E;
 	--cor2: #D95252;
 	--corSombra: #A61F1F;
@@ -31,6 +31,10 @@
 	color: var(--corFonte);
 }
 
+.fi-rr-lock{
+	background-color: var(--cor1);
+}
+
 .caixaLogin{
 	width: 300px;
 	padding: 40px;
@@ -52,7 +56,7 @@
 
 .caixaLogin #emailLogin, .caixaLogin #senhaLogin{
 	border: 0; 
-	background: var(--background);
+	background: white;
 	display: block;
 	margin: 20px auto;
 	text-align:center;
@@ -68,12 +72,12 @@
 
 .caixaLogin #emailLogin:focus, .caixaLogin #senhaLogin:focus{
 	width:210px;
-	border-color: var(--background);
+	border-color: #C2DB5E;
 }
 
 .caixaLogin #botaoLogin, #botaoRegistro{
 	border: 0; 
-	background: var(--background);
+	background: white;
 	display: block;
 	margin: 20px auto;
 	text-align:center;
@@ -89,7 +93,8 @@
 }
 
 #logo{
-	background: var(--background);
+	margin: 5px;
+	background: white;
 	padding: 3px;
 	border-radius: 10px;
 }
