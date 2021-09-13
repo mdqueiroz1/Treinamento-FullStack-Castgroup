@@ -1,9 +1,9 @@
 :root{
-	--background : #daf0ee;
-	--cor1: #9DB5B2;
-	--cor2: #ffff;
-	--corSombra: #136E51;
-	--corFonte:#3B413C;
+	--background : #D9BBA0;
+	--cor1: #F22E2E;
+	--cor2: #D95252;
+	--corSombra: #A61F1F;
+	--corFonte:#0D0D0D;
 }
 
 *{
@@ -12,33 +12,75 @@
 }
 
 @font-face {
+    src: url(fonts/KaiseiTokumin-Regular.ttf);
     font-family: 'Kaisei Tokumin', serif;
-    src: url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
 }
 
 body{
     background-color: var(--background);
+    font-family: 'Kaisei Tokumin', serif;
 }
 
-.header{
-    position: fixed;
-    width: 100%;
-    align-tracks: right;
+/*
+# Barra pesquisa, menu carrinho e login
+*/
+
+.cabecalhoPagina{
     background-color: var(--cor1);
+    padding-bottom: 1%;
+
+}
+
+.pesquisaInput{
+    width: 40%;
+    height: 5%;
+    margin: 10px;
+    padding-left: 5px;
+    font-size: 18px;
+    background-color: var(--background);
+    margin-left: 15%;
+    border-radius: 5px;
+}
+.fi-rr-search{
+text-decoration: none;
+    font-size: 20px;
+    color: var(--corFonte);
+}
+
+#iconeBarraPesquisa{
+    margin-top: 2.8125rem;
+    margin-right: 1.875rem;
+    text-decoration: none;
+    color: black;
+    font-size: 33px;
+    float: inline-end;
 }
 
 .logoSupermercado{
-    width: 150px;
-    
+    width: 13%;
     float: left;
+    position: relative;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    align-tracks: right;
+}
+
+.menuDropdown{
+    position: relative;
+}
+
+.fi-rr-menu-burger{
+    margin: 5px;
 }
 
 .menu ul{
     list-style-type: none;
     padding: 15px;
     margin: 0;
-    background-color: var(--corSombra);
-    margin-top: 25px;
+    margin-top: 15px;
     text-align: left;
 }
 
@@ -51,13 +93,13 @@ body{
     color: black;
     text-decoration: none;
     padding: 15px;
-    transition: background .250s;
+    transition: background .500s;
 
 }
 
 .menu ul li a:hover{
-    background-color: var(--background);
-    color: var(--cor4);
+    background-color: var(--corSombra);
+    color: var(--background);
     text-decoration: none;
 }
 
@@ -68,7 +110,8 @@ body{
 }
 
 .menu ul li:hover ul{
-    display: flex;   
+    display: flex;
+    margin: 0px;
 }
 
 .menu ul ul li{
@@ -79,8 +122,4 @@ body{
     display: block;
     background-color: var(--cor1);
     text-align: center;
-}
-
-.botaoLogin{
-    align-self: right;
 }
