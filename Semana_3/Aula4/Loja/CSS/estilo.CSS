@@ -129,6 +129,31 @@ body{
     }
 /* !Fim  barra de pesquisa, cabeçalho, icones */
 
+/* !Sessão de ofertas*/
+    .sessaoOferta{
+        margin: 50px;
+        margin-left: 200px;
+        width: 70%;
+        height: auto;
+        text-align: left;
+        background-color: white;
+    }
+    .sessaoOferta hr{
+        width: 100%;
+    }
+    .sessaoOferta img{
+        float: left;
+        width: 30px;
+    }
+
+    #imgProduto{
+        width: 80px;
+        margin: 20px;
+        background-color: white;
+    }
+
+/* !Final sessão de ofertas*/
+
 /* !Fale conosco */
     .faleConosco{
         width: 43.5rem;
