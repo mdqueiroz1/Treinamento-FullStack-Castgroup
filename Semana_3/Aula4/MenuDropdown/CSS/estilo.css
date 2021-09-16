@@ -1,74 +1,31 @@
 :root{
-    --corl: #59A96A;
-    --cor2: #9BDEAC;
-    --cor3: #636940;
-    --cor4: #B4E7CE;
-    --corSombra: #474A2C;
-}
-
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-@font-face {
-    font-family: 'Kaisei Tokumin', serif;
-    src: url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
-}
-
-body{
-    background-color: var(--cor4);
-}
-
-.header{
-    position: fixed;
-    width: 100%;
+    --corBackground: #ffff;
 }
 
 .menu ul{
-    list-style-type: none;
-    padding: 15px;
-    margin: 0;
-    background-color: var(--cor2);
-    margin-top: 15px;
-    text-align: center;
+    background-color: #a1a1a1;
+    display: inline;
+    text-decoration-line: none;
+    position: absolute;
 }
 
 .menu ul li{
     display: inline;
-    position: relative;
 }
 
-.menu ul li a{
-    color: black;
-    text-decoration: none;
-    padding: 15px;
-    transition: background .250s;
-}
-
-.menu ul li a:hover{
-    background-color: var(--corSombra);
-    color: var(--cor4);
-    text-decoration: none;
-    padding: 20px;
-}
-
-.menu ul ul{
+.menu ul ul {
     display: none;
-    position: absolute;
-    left: 0;
 }
 
 .menu ul li:hover ul{
     display: block;
+    position: absolute;
 }
 
-.menu ul ul li{
-    display: block;
+.menu ul ul ul li{
+    display: none;
 }
 
-.menu ul ul li a{
+.menu ul ul li:hover ul li{
     display: block;
-    background-color: var(--cor2);
-    text-align: left;
 }
