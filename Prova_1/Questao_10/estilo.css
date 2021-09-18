@@ -1,0 +1,32 @@
+*{
+    background-color: green;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+hr{
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li ul li a{
+    text-decoration: none;
+    color: yellow;
+}

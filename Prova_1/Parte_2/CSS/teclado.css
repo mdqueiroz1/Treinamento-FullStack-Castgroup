@@ -1,0 +1,260 @@
+:root{
+	--background : #A3A9AA;
+	--cor1: #0B132B;
+	--cor2: #1D3270;
+    --cor3: #3E6BF0;
+	--corSombra: #0B132B;
+	--corFonte:#ffff;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    src: url(fonts/KaiseiTokumin-Regular.ttf);
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Kaisei Tokumin', serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* !Barra pesquisa, menu carrinho e login */
+    .cabecalhoPagina{
+        background-color: var(--cor1);
+        padding-bottom: 1%;
+    }
+
+    .barraPesquisa{
+        padding: 1%;
+    }
+
+    .pesquisaCabecalho{
+        width: 40%;
+        height: 6%;
+        border-color: #0D0D0D;
+        border-width: 2px;
+        border-radius: 5px;
+        margin-top: 1%;
+        background-color: #E6E6E6;
+        margin-left: 30%;
+        margin-right: auto;
+    }
+
+    .pesquisaCabecalho td{
+        border: none;
+    }
+
+    .pesquisaInput{
+        background: none;
+        border: none;
+        width: 100%;
+        height: 100%;
+        font-size: 120%;
+        margin-left: 5%;
+    }
+
+    .fi-rr-search{
+        font-size: 20px;
+        font-style: oblique;
+        color: black;
+        float: right;
+        padding-right: 10px;
+    }
+
+    #iconeBarraPesquisa{
+        margin-top:1%;
+        margin-right: 3%;
+        text-decoration: none;
+        color: white;
+        font-size: 33px;
+        float: right;
+    }
+    #iconeBarraPesquisa:hover{
+        color: var(--cor3);
+    }
+
+    .logoLoja{
+        width: 12%;
+        float: left;
+        position: relative;
+    }
+
+    .header{
+        position: relative;
+        width: 100%;
+        align-tracks: right;
+    }
+
+    .menuDropdown{
+        position: relative;
+    }
+
+    .fi-rr-menu-burger{
+        margin: 5px;
+    }
+
+    .menu ul{
+        list-style-type: none;
+        padding: 15px;
+        margin: 0;
+        margin-top: 15px;
+        text-align: left;
+        text-shadow: 2px 2px 2px var(--corSombra);
+    }
+
+    .menu ul li{
+        display: inline;
+        position: relative;
+    }
+
+    .menu ul li a{
+        color: white;
+        text-decoration: none;
+        padding: 5px;
+        transition: background .500s;
+        vertical-align: middle;
+    }
+
+    .menu ul li a:hover{
+        color: var(--cor3);
+        text-decoration: none;
+    }
+
+    .menu ul ul{
+        width: 160px;
+        display: none;
+        left: 0;
+        position: absolute;
+    }
+
+    .menu ul li:hover ul{
+        display: block;
+        margin: 0px;
+
+    }
+
+    .menu ul ul li{
+        background-color: var(--cor1);
+        padding-right: 5px;
+        display: flex;
+        box-shadow: .1875rem .1875rem .1875rem var(--corFonte);
+    }
+
+    .menu ul ul li a{
+        display: block;
+        background-color: var(--cor1);
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .menu ul ul li #imgMenu{
+        width: 25%;
+    }
+
+    .menu ul ul ul li{
+        width: 150px;
+        display: none;
+        left: 0px;
+    }
+    
+    .menu ul ul li:hover ul li {
+        display: block;
+        margin-left: 94%;
+        padding: 2px;
+        
+    }
+/* !Fim  barra de pesquisa, cabeçalho, icones */
+
+/* !Inicio tabelas*/
+
+    .campoImagem img{
+        width: 40%;
+        height: auto;
+        float: left;
+        margin-top: 4%;
+        border-radius: 3px;
+        box-shadow: 3px 3px 3px var(--corSombra);
+    }
+
+    .especificacoes{
+        padding: 3% ;
+        margin-right: 10%;
+        margin-top: 6%;
+        float: right;
+        border-radius: 5px;
+        background-color: var(--corFonte);
+        box-shadow: 3px 3px 3px var(--corSombra);
+    }
+
+    .especificacoes h5{
+        text-decoration: line-through;
+        color: rgba(000, 000, 000, 0.7);
+    }
+    #opcoesPagamento{
+        text-decoration: none;
+        color: var(--cor1);
+        font-size: 85%;
+    }
+
+    #buttonCompra{
+        width: 40%;
+        height: 40px;
+        margin-left: 30%;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: var(--cor3);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px var(--corSombra);
+    }
+
+    #buttonCompra:hover{
+        background-color: var(--cor2);
+    }
+
+    #buttonCompra a{
+        text-decoration: none;
+        color: var(--corFonte);
+        font-size: 22px;
+    }
+    #h4Frete{
+        margin: 8px;
+    }
+    #inputCep{
+        width: 40%;
+        height: 30px;
+        margin-left: 10px;
+        border-style: solid;
+        border-color: var(--cor3);
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px var(--corSombra);
+    }
+    #inputCep:focus{
+        border: none;
+    }
+
+    #buttonFrete{
+        width: 20%;
+        height: 30px;
+        background: var(--cor3);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px var(--corSombra);
+    }
+    #buttonFrete:hover{
+        background-color: var(--cor2);
+
+    }
+    #buttonFrete a{
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--corFonte);
+    }
+    

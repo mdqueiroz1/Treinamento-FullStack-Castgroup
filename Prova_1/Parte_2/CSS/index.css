@@ -1,0 +1,323 @@
+:root{
+	--background : #A3A9AA;
+	--cor1: #0B132B;
+	--cor2: #1D3270;
+    --cor3: #3E6BF0;
+	--corSombra: #0B132B;
+	--corFonte:#ffff;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    src: url(fonts/KaiseiTokumin-Regular.ttf);
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Kaisei Tokumin', serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* !Barra pesquisa, menu carrinho e login */
+    .cabecalhoPagina{
+        background-color: var(--cor1);
+        padding-bottom: 1%;
+    }
+
+    .barraPesquisa{
+        padding: 1%;
+    }
+
+    .pesquisaCabecalho{
+        width: 40%;
+        height: 6%;
+        border-color: #0D0D0D;
+        border-width: 2px;
+        border-radius: 5px;
+        margin-top: 1%;
+        background-color: #E6E6E6;
+        margin-left: 30%;
+        margin-right: auto;
+    }
+
+    .pesquisaCabecalho td{
+        border: none;
+    }
+
+    .pesquisaInput{
+        background: none;
+        border: none;
+        width: 100%;
+        height: 100%;
+        font-size: 120%;
+        margin-left: 5%;
+    }
+
+    .fi-rr-search{
+        font-size: 20px;
+        font-style: oblique;
+        color: black;
+        float: right;
+        padding-right: 10px;
+    }
+
+    #iconeBarraPesquisa{
+        margin-top:1%;
+        margin-right: 3%;
+        text-decoration: none;
+        color: white;
+        font-size: 33px;
+        float: right;
+    }
+    #iconeBarraPesquisa:hover{
+        color: var(--cor3);
+    }
+
+    .logoLoja{
+        width: 12%;
+        float: left;
+        position: relative;
+    }
+
+    .header{
+        position: relative;
+        width: 100%;
+        align-tracks: right;
+    }
+
+    .menuDropdown{
+        position: relative;
+    }
+
+    .fi-rr-menu-burger{
+        margin: 5px;
+    }
+
+    .menu ul{
+        list-style-type: none;
+        padding: 15px;
+        margin: 0;
+        margin-top: 15px;
+        text-align: left;
+        text-shadow: 2px 2px 2px var(--corSombra);
+    }
+
+    .menu ul li{
+        display: inline;
+        position: relative;
+    }
+
+    .menu ul li a{
+        color: white;
+        text-decoration: none;
+        padding: 5px;
+        transition: background .500s;
+        vertical-align: middle;
+    }
+
+    .menu ul li a:hover{
+        color: var(--cor3);
+        text-decoration: none;
+    }
+
+    .menu ul ul{
+        width: 160px;
+        display: none;
+        left: 0;
+        position: absolute;
+    }
+
+    .menu ul li:hover ul{
+        display: block;
+        margin: 0px;
+
+    }
+
+    .menu ul ul li{
+        background-color: var(--cor1);
+        padding-right: 5px;
+        display: flex;
+        box-shadow: .1875rem .1875rem .1875rem var(--corFonte);
+    }
+
+    .menu ul ul li a{
+        display: block;
+        background-color: var(--cor1);
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .menu ul ul li #imgMenu{
+        width: 25%;
+    }
+
+    .menu ul ul ul li{
+        width: 150px;
+        display: none;
+        left: 0px;
+    }
+    
+    .menu ul ul li:hover ul li {
+        display: block;
+        margin-left: 94%;
+        padding: 2px;
+        
+    }
+
+
+/* !Fim  barra de pesquisa, cabeçalho, icones */
+
+/* !Fale conosco */
+    .faleConosco{
+        width: 70%;
+        background-color: var(--cor2);
+        text-align: center;
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+        padding: 1.25rem;
+        box-shadow: .1875rem .1875rem .1875rem var(--cor1);
+        border-radius: .3125rem;
+        
+    }
+
+    .faleConosco h2{
+        margin-bottom: .8125rem;
+        text-align: center;
+        color:white;
+        text-shadow:2px 2px 2px var(--corSombra);
+    }
+
+    #caixaTexto{
+        margin: .625rem;
+        border: none;
+        border-radius: .3125rem;
+        height: 1.875rem;
+        padding-left: .4375rem;
+        box-shadow: 3px 3px 3px var(--corSombra);
+    }
+
+    #botaoEnviar{
+        border: none;
+        height: 1.875rem;
+        width: 3.125rem;
+        border-radius: .3125rem;
+        box-shadow: 3px 3px 3px var(--corSombra);
+        
+    }
+    #botaoEnviar:hover{
+        background-color: rgb(196, 196, 196);
+    }
+
+    .inputEmail{
+        width: 18.75rem;
+    }
+
+    .inputNome{
+        width: 15.625rem;
+    }
+
+/* !Cabecalho carrossel */
+
+    .cabecalhoCarrossel{
+        margin-top: 5%;
+        text-align: center;
+        text-shadow: 1px 1px 1px var(--corSombra);
+    }
+
+    .cabecalhoCarrossel hr{
+        width: 563px;
+        height: 2px;
+        color: none;
+        background-color: var(--cor1);
+        box-shadow: 2px 2px 2px var(--corSombra);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+/* !Carrossel inicio */
+/*
+Fonte do carrossel:
+https://www.codigofonte.com.br/dicas/como-criar-um-slideshow-sem-usar-uma-linha-de-javascript
+Foi utilizado o código e modificado conforme a necessidade. 
+*/
+    .carrossel-mascara{
+        width: 563px; /* tem a mesma largura das imagens*/
+        margin: 0 auto;
+        overflow: hidden;
+        font-size: 0; /* para remover o espaço entre elementos-filho marcados como inline-block*/
+        margin-top: 1%;
+    }
+        
+    .carrossel-container {
+        width: 2815px;  /* a soma da largura de todos os elementos */
+        transition: 1s ease;
+        height: 432px; /* tem a mesma altura das imagens */
+    }
+        
+        /*Especifique também o tamanho de cada elemento interno, para que não haja margem para erros de renderização:*/
+        
+    .carrossel-container img{
+        width: 563px;
+        height: auto;
+        display: inline-block;
+        vertical-align:top;
+        font-size: 16px;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    
+    .slide {
+        animation: slide 15s ease infinite;
+    }
+
+    @keyframes slide {
+        0% {
+        transform: translateX(0%);
+        }
+                
+        12.5% {
+            transform: translateX(0%);
+        }
+                
+        25% {
+            transform: translateX(-20%);
+        }
+                
+        37.5% {
+            transform: translateX(-20%);
+        }
+                
+        50% {
+            transform: translateX(-40%);
+        }
+                
+        62.5% {
+            transform: translateX(-40%);
+        }
+                
+        75% {
+            transform: translateX(-60%);
+        }
+                
+        87.5% {
+            transform: translateX(-60%);
+        }
+                
+        99% {
+            transform: translateX(-60%);
+        }
+                
+        100% {
+            transform: translateX(0);
+        }
+    }
+/* !Fim Fale conosco */

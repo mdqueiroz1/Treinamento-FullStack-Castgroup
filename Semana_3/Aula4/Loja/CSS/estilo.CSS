@@ -129,19 +129,73 @@ body{
     }
 /* !Fim  barra de pesquisa, cabeçalho, icones */
 
-/* !Fale conosco */
-    .faleConosco{
-        width: 43.5rem;
-        background-color: #F22E2E;
-        margin: 3.75rem;
+/* !Sessão de ofertas*/
+    .sessaoOferta{
+        margin: 50px;
         margin-left: auto;
         margin-right: auto;
+        width: 70%;
+        height: auto;
+        text-align: left;
+        padding-bottom: 22%;
+    }
+    
+    .sessaoOferta hr{
+        width: 100%;
+        color: var(--cor1);
+    }
+    
+    .sessaoOferta #iconeFlame{
+        float: left;
+        width: 30px;
+    }
+
+    .sessaoOferta #bloco{
+        width: 18%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        float: inline-start;
+        background-color: white;
+        margin: 1%;
+        border-radius: 6px;
+        border-color: var(--corFonte);
+        box-shadow: 2px 2px 2px var(--corFonte);
+    }
+    #bloco:hover{
+        box-shadow: 3px 3px 3px var(--corSombra);
+    }
+
+    .sessaoOferta #imgBloco{
+        width: 100%;
+        height: auto;
+    }
+
+    .sessaoOferta p{
+        margin: 10px;
+        font-size: 14px;
+        text-shadow:1px 1px 1px #E6E6E6;
+    }
+
+    .sessaoOferta #preco{
+        font-weight: bold ;
+        font-size: 17px;
+    }
+
+/* !Final sessão de ofertas*/
+
+/* !Fale conosco */
+    .faleConosco{
+        width: 70%;
+        background-color: #F22E2E;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
         padding: 1.25rem;
-        padding-left: 4.75rem;
-        padding-right: 4.75rem;
         box-shadow: .1875rem .1875rem .1875rem var(--corFonte);
         border-radius: .3125rem;
+        
     }
 
     .faleConosco h2{
