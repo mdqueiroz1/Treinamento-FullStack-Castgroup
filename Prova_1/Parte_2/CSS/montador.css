@@ -3,7 +3,7 @@
 	--cor1: #0B132B;
 	--cor2: #1D3270;
     --cor3: #3E6BF0;
-	--corSombra: #0B132B;
+	--corSombra: #06102e;
 	--corFonte:#ffff;
 }
 
@@ -105,7 +105,7 @@ body{
         margin: 0;
         margin-top: 15px;
         text-align: left;
-        text-shadow: 2px 2px 2px var(--corSombra);
+        text-shadow: 3px 3px 3px var(--corSombra);
     }
 
     .menu ul li{
@@ -175,28 +175,83 @@ body{
 
 /* !Tabela de escolha de teclado */
 
+    .tabelas{
+        margin-top: 2% ;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
     .blocoEsquerdo{
-        width: 40%;
-        margin: 2%;
+        width: 55%;
+        padding: 10px;
         float: left;
+        background-color:var(--cor2);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px var(--corSombra);
+    }
+
+    .blocoEsquerdo h1{
+        color: var(--corFonte);
+        text-align: center;
+        text-shadow: 3px 3px 3px var(--corSombra);
+    }
+
+    .blocoEsquerdo h3{
+        color: var(--cor3);
+        text-align: right;
+        padding-top: 1%;
     }
 
     .blocoEsquerdo img{
         width: 100%;
-        border-radius: 5px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px var(--corSombra);
     }
 
     .tabela{
-        width: 40%;
-        margin: 2%;
+        width: 35%;
         float: right;
         background-color: var(--cor2);
         font-weight: bold;
+        padding-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px var(--corSombra);
     }
 
-    .tabela #botaoAzul{
-        width: 30px;
-        border-radius: 10px;
+    .tabela td{
+        padding: 1%;
+        padding-left: 20%;
+        color: var(--corFonte);
+        text-shadow: 4px 4px 4px var(--corSombra);
     }
+
+    .tabela h2{
+        text-align: center;
+        color: var(--corFonte);
+        text-shadow: 4px 4px 4px var(--corSombra);
+    }
+
+    .tabela #opTabela{
+        width: 75%;
+        background-color: var(--background);
+        border-color: var(--corSombra);
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px var(--corSombra);
+    }
+
+    .tabela #tBotao{
+        width: 120px;
+        height: 25px;
+        background-color: var(--background);
+        border-color: none;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px var(--corSombra);
+    }
+
+    .tabela #tBotao:hover{
+        background-color: var(--corFonte);
+    }
+
+
 
 /* !Fim tabela de escolha de teclado */

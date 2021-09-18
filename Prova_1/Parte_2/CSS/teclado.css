@@ -169,155 +169,92 @@ body{
         padding: 2px;
         
     }
-
-
 /* !Fim  barra de pesquisa, cabeçalho, icones */
 
-/* !Fale conosco */
-    .faleConosco{
-        width: 70%;
-        background-color: var(--cor2);
-        text-align: center;
-        margin-top: 3%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3%;
-        padding: 1.25rem;
-        box-shadow: .1875rem .1875rem .1875rem var(--cor1);
-        border-radius: .3125rem;
-        
-    }
+/* !Inicio tabelas*/
 
-    .faleConosco h2{
-        margin-bottom: .8125rem;
-        text-align: center;
-        color:white;
-        text-shadow:2px 2px 2px var(--corSombra);
-    }
-
-    #caixaTexto{
-        margin: .625rem;
-        border: none;
-        border-radius: .3125rem;
-        height: 1.875rem;
-        padding-left: .4375rem;
-        box-shadow: 3px 3px 3px var(--corSombra);
-    }
-
-    #botaoEnviar{
-        border: none;
-        height: 1.875rem;
-        width: 3.125rem;
-        border-radius: .3125rem;
-        box-shadow: 3px 3px 3px var(--corSombra);
-        
-    }
-    #botaoEnviar:hover{
-        background-color: rgb(196, 196, 196);
-    }
-
-    .inputEmail{
-        width: 18.75rem;
-    }
-
-    .inputNome{
-        width: 15.625rem;
-    }
-
-/* !Cabecalho carrossel */
-
-    .cabecalhoCarrossel{
-        margin-top: 5%;
-        text-align: center;
-        text-shadow: 1px 1px 1px var(--corSombra);
-    }
-
-    .cabecalhoCarrossel hr{
-        width: 563px;
-        height: 2px;
-        color: none;
-        background-color: var(--cor1);
-        box-shadow: 2px 2px 2px var(--corSombra);
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-/* !Carrossel inicio */
-/*
-Fonte do carrossel:
-https://www.codigofonte.com.br/dicas/como-criar-um-slideshow-sem-usar-uma-linha-de-javascript
-Foi utilizado o código e modificado conforme a necessidade. 
-*/
-    .carrossel-mascara{
-        width: 563px; /* tem a mesma largura das imagens*/
-        margin: 0 auto;
-        overflow: hidden;
-        font-size: 0; /* para remover o espaço entre elementos-filho marcados como inline-block*/
-        margin-top: 1%;
-    }
-        
-    .carrossel-container {
-        width: 2815px;  /* a soma da largura de todos os elementos */
-        transition: 1s ease;
-        height: 432px; /* tem a mesma altura das imagens */
-    }
-        
-        /*Especifique também o tamanho de cada elemento interno, para que não haja margem para erros de renderização:*/
-        
-    .carrossel-container img{
-        width: 563px;
+    .campoImagem img{
+        width: 40%;
         height: auto;
-        display: inline-block;
-        vertical-align:top;
-        font-size: 16px;
-        margin: 0 auto;
+        float: left;
+        margin-top: 4%;
+        border-radius: 3px;
+        box-shadow: 3px 3px 3px var(--corSombra);
+    }
+
+    .especificacoes{
+        padding: 3% ;
+        margin-right: 10%;
+        margin-top: 6%;
+        float: right;
         border-radius: 5px;
+        background-color: var(--corFonte);
+        box-shadow: 3px 3px 3px var(--corSombra);
+    }
+
+    .especificacoes h5{
+        text-decoration: line-through;
+        color: rgba(000, 000, 000, 0.7);
+    }
+    #opcoesPagamento{
+        text-decoration: none;
+        color: var(--cor1);
+        font-size: 85%;
+    }
+
+    #buttonCompra{
+        width: 40%;
+        height: 40px;
+        margin-left: 30%;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: var(--cor3);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px var(--corSombra);
+    }
+
+    #buttonCompra:hover{
+        background-color: var(--cor2);
+    }
+
+    #buttonCompra a{
+        text-decoration: none;
+        color: var(--corFonte);
+        font-size: 22px;
+    }
+    #h4Frete{
+        margin: 8px;
+    }
+    #inputCep{
+        width: 40%;
+        height: 30px;
+        margin-left: 10px;
+        border-style: solid;
+        border-color: var(--cor3);
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px var(--corSombra);
+    }
+    #inputCep:focus{
+        border: none;
+    }
+
+    #buttonFrete{
+        width: 20%;
+        height: 30px;
+        background: var(--cor3);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px var(--corSombra);
+    }
+    #buttonFrete:hover{
+        background-color: var(--cor2);
+
+    }
+    #buttonFrete a{
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--corFonte);
     }
     
-    .slide {
-        animation: slide 15s ease infinite;
-    }
-
-    @keyframes slide {
-        0% {
-        transform: translateX(0%);
-        }
-                
-        12.5% {
-            transform: translateX(0%);
-        }
-                
-        25% {
-            transform: translateX(-20%);
-        }
-                
-        37.5% {
-            transform: translateX(-20%);
-        }
-                
-        50% {
-            transform: translateX(-40%);
-        }
-                
-        62.5% {
-            transform: translateX(-40%);
-        }
-                
-        75% {
-            transform: translateX(-60%);
-        }
-                
-        87.5% {
-            transform: translateX(-60%);
-        }
-                
-        99% {
-            transform: translateX(-60%);
-        }
-                
-        100% {
-            transform: translateX(0);
-        }
-    }
-/* !Fim Fale conosco */
