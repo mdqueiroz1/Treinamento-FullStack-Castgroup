@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Questao 9</title>
+</head>
+
+<body bgcolor="#E5EBEA">
+
+    <table border align=center width="100%" bgcolor="#DBD9DB">
+        <td>
+            <h2><center>Cadastro do usuário</center></h2>
+        </td>
+    </table>
+    <b>Informações pessoais</b>
+    <br>
+    <table >
+        <form action="input">
+            <br>
+            <td>Nome</td>
+            <th><input type="text" name="fUnidade2" size="100"></th>
+            <tr></tr>
+            <td>Data de nascimento</td>
+            <td>
+                <input type="date" name="fDia" size="30">
+            </td>
+            <tr></tr>
+            <td>Telefone</td>
+            <td>
+                <input type="float" name="fTelefoneDDD" size="3">
+                <input type="tel" name="fTelefone" size="11">
+            </td>
+            <tr></tr>
+            <td>Email</td>
+            <td><input type="email" name="fEmail" size="30"></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Endereço</td>
+            <tr></tr>
+            <td>Rua </td>
+            <td><input type="text" name="fRua"></td>
+            <tr></tr>
+            <td>Cep </td>
+            <td><input type="number" name="fCep"></td>
+            <tr></tr>
+            <td>Cidade</td> </td>
+            <td><input type="text" name="fCidade"></td>
+            <tr></tr>
+            <td>Estado </td>
+            <td><input type="text" name="fEstado"></td>
+            <tr></tr>
+            <td>Opção de pagamento</td>
+            <td>
+                <select name="fSelect" >
+                    <option value="0"></option>
+                    <option value="1">Cartao de crédito</option>
+                    <option value="2">Cartao de débito</option>
+                    <option value="3">Boleto Bancário</option>
+                </select>
+            </td>
+            <tr></tr>
+            <td>Deseja receber notificações?</td>
+            <td>
+                Sim <input type="radio">
+                Não <input type="radio">
+            </td>
+            <tr>
+                <td>
+                    <center>
+                        <input type="submit" value="Salvar">
+                        <button type="reset">Resetar</button>
+                    </center>
+                </td>
+            </tr>
+        </form>
+    </table>
+
+</body>
+
+</html>

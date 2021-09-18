@@ -1,0 +1,31 @@
+variavel
+    inteiro p1, p2, contador, posicao
+
+inicio
+
+    p1 <- 1
+    p2 <- 1
+    contador <- 1
+
+    escreva("Informe o valor da posicao")
+    leia(posicao)
+
+    se(posicao <= 2)
+
+        se(posicao > 0)
+            imprima("A posicao é invalida")
+        senão
+            imprima("O valor da posicao informada é 1")
+        fimse
+    senao
+        enquanto contador <> posicao faca
+            p1
+
+
+        fimenquanto
+    fimse
+    
+
+
+
+fim

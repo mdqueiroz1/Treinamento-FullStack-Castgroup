@@ -1,13 +1,12 @@
-package Lista_3;
-
 import java.util.Scanner; 
 
-public class Atividade9 {
+public class Calcular {
 
-	public static void main(String[] args) {
-		Scanner leia = new Scanner(System.in);
-		Integer qnt = 4;
+	public void iniciar(){
 		
+		Scanner leia = new Scanner(System.in);
+		Integer qnt = 3;
+
 		int[][] matriz = new int[qnt][qnt];
 		double media = 0;
 		
@@ -19,7 +18,7 @@ public class Atividade9 {
 			}
 		}
 		
-		media = media/qnt*qnt;
+		media = media/(qnt*qnt);
 		
 		System.out.println("Numeros na diagonal principal:");
 		for(int i = 0; i < qnt; i++) {
@@ -39,3 +38,4 @@ public class Atividade9 {
 		leia.close();
 	}
 }
+
