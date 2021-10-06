@@ -64,10 +64,12 @@ CREATE TABLE carros(
     fk_idMarca INT NOT NULL,
     FOREIGN KEY(fk_idMarca) REFERENCES marca(idMarca),
 
-    modelo VARCHAR(45),
+    modelo VARCHAR(60),
     ano decimal,
+    cor VARCHAR(20),
     placa char(7),
-    renavam char(11)
+    renavam char(11),
+    valorDiario float
 );
 
 CREATE TABLE aluguel(
@@ -82,7 +84,7 @@ CREATE TABLE aluguel(
 
     dataAluguel date,
     dataDevolucao date,
-    valorDiario float
+    valorTotal float
 );
 
 

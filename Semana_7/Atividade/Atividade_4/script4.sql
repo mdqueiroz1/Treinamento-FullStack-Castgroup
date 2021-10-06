@@ -7,6 +7,7 @@ CREATE TABLE cliente(
     PRIMARY KEY (idCliente),
     
     nome VARCHAR(60),
+    dataNascimento date,
     sexo VARCHAR(45)
 );
 
@@ -48,34 +49,37 @@ CREATE TABLE telefone (
     telefone CHAR(12)
 );
 
-CREATE TABLE pecas(
-    idPecas INT NOT NULL AUTO_INCREMENT,
-    PRIMARY KEY (idPecas),
+CREATE TABLE eletronico(
+    idEletronico INT NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY(idEletronico),
 
-    descricaoPeca VARCHAR(100),
-    valor float
+    marca VARCHAR(45),
+    modelo VARCHAR(45),
+    dataEntrada date,
+    dataSaida date
 );
 
 CREATE TABLE servico(
     idServico INT NOT NULL AUTO_INCREMENT,
     PRIMARY KEY(idServico),
 
-    fk_idPecas INT NOT NULL,
-    FOREIGN KEY(fk_idPecas) REFERENCES pecas(idPecas),
+    fk_idCliente INT NOT NULL,
+    FOREIGN KEY(fk_idCliente) REFERENCES cliente(idCliente),
+
+    fk_idEletronico INT NOT NULL,
+    FOREIGN KEY(fk_idEletronico) REFERENCES eletronico(idEletronico),
 
     diagnostico VARCHAR(100),
     valor float
 );
 
-CREATE TABLE eletronico(
-    idEletronico INT NOT NULL AUTO_INCREMENT,
-    PRIMARY KEY(idEletronico),
+CREATE TABLE pecas(
+    idPecas INT NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (idPecas),
 
     fk_idServico INT NOT NULL,
     FOREIGN KEY(fk_idServico) REFERENCES servico(idServico),
 
-    marca VARCHAR(45),
-    modelo VARCHAR(45),
-    dataEntrada date,
-    dataSaida date
+    descricaoPeca VARCHAR(100),
+    valor float
 );
