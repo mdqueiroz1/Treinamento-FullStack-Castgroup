@@ -12,13 +12,15 @@ public abstract class ContaBanco {
     private String titular, agencia, nConta, nomeAgencia, nomeBanco;
 
     public ContaBanco() {
-
+        
         int numero = nRand.nextInt(9999);
-
+        
         if (numero<1000) {
             numero += 2000;
         }
-
+        
+        setNConta(Integer.toString(numero));
+        
         System.out.println(
             "Selecione o banco:"+
             "\n1- Banco do Brasil"+
@@ -29,8 +31,10 @@ public abstract class ContaBanco {
         );
         int banco = leia.nextInt();
         leia.nextLine();
-        System.out.println("Selecione a agência:");
+            
         setAgencia(("000"+String.valueOf(banco)));
+        
+        System.out.println("Selecione a agência:");
         switch (banco) {
             case 1:{
                 setNomeBanco("Banco do Brasil");
@@ -113,7 +117,7 @@ public abstract class ContaBanco {
             default:
                 break;
         }
-        setNConta(Integer.toString(nRand.nextInt(9999)));
+        
     }    
 
     public void depositoConta (){

@@ -20,6 +20,7 @@ public class ContaConjunta extends ContaBanco{
         setTitular2(leia.nextLine());
         setSituacaoDaConta(true);
         setSaldo(0);
+        System.out.println("Conta criada com sucesso!");
     }
 
     public void saqueContaConjunta (){
